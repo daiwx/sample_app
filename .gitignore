@@ -24,4 +24,6 @@ doc/
 .DS_Store
 .idea
 .secret
+.rvmrc
+.rspec
 
