@@ -12,6 +12,7 @@ describe "AuthenticationPages" do
 
   describe "signin" do
     before { visit signin_path }
+
     describe "with invalid information" do
         before { click_button "Sign in" }
 
@@ -27,6 +28,7 @@ describe "AuthenticationPages" do
 
     describe "with valid information" do
         let(:user) { FactoryGirl.create(:user) }
+        
         before { valid_signin(user) }
 
         it { should have_title(user.name) }
